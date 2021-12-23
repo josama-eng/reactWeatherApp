@@ -26,7 +26,7 @@ export const SearchBox = () => {
           setWeatherData(data);
           setForecastArray(data.forecast.forecastday);
           setCity("");
-          console.log(data);
+
           setClassName("");
         });
     }
@@ -142,7 +142,7 @@ export const SearchBox = () => {
   const styleDiv = {
     background: linearGradient,
     width: "100%",
-    minHeight: "100%",
+    minHeight: "100vh",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -198,15 +198,6 @@ export const SearchBox = () => {
               },
               425: {
                 slidesPerView: 3,
-              },
-              384: {
-                slidesPerView: 2,
-              },
-              376: {
-                slidesPerView: 1,
-              },
-              320: {
-                slidesPerView: 1,
               },
             }}
           >

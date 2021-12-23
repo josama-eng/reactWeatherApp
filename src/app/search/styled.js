@@ -131,7 +131,7 @@ export const ResultWrapper = styled.div`
       }
 
       @media (max-width: 425px) {
-        width: 400px;
+        display: none;
       }
       @media (max-width: 380px) {
         width: 200px;
