@@ -142,7 +142,7 @@ export const SearchBox = () => {
   const styleDiv = {
     background: linearGradient,
     width: "100%",
-    minHeight: "100vh",
+    minHeight: "100%",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -150,7 +150,7 @@ export const SearchBox = () => {
   };
 
   return (
-    <div style={styleDiv}>
+    <div style={styleDiv} className="styleDiv">
       <SearchWrapper
         onKeyPress={() => setClassName("full")}
         className={`${className}`}
@@ -200,10 +200,13 @@ export const SearchBox = () => {
                 slidesPerView: 3,
               },
               384: {
-                slidesPerView: 15,
+                slidesPerView: 2,
+              },
+              376: {
+                slidesPerView: 1,
               },
               320: {
-                slidesPerView: 20,
+                slidesPerView: 1,
               },
             }}
           >

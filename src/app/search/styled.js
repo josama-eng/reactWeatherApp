@@ -131,9 +131,11 @@ export const ResultWrapper = styled.div`
       }
 
       @media (max-width: 425px) {
-        width: 100%;
+        width: 400px;
       }
-
+      @media (max-width: 380px) {
+        width: 200px;
+      }
       .swiper-wrapper {
         .swiper-slide {
           width: 50px;
